@@ -15,6 +15,17 @@ const PeticionApi_yugiho = () => {
             console.log(error)
         }
     }
+    const siguiente = () => {
+        setPaginacion(paginacion + 1);
+        traerPersonajes();
+    };
+    
+    const atras = () => {
+        if (paginacion > 1) {
+          setPaginacion(paginacion - 1);
+          traerPersonajes();
+        }
+    };
 
   return (
     <div>PeticionApi_yugiho</div>
