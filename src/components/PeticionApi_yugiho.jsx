@@ -32,9 +32,9 @@ const PeticionApi_yugiho = () => {
         <div className='container'>
         <h1 className='text-center'>Yu-Gi-Ho Cartas de Duelos</h1>
         <div class="btn-group text-center container" role="group">
-        <button class="btn btn-danger" onClick={atras}>Atrás</button>
-        <button  class="btn btn-primary" onClick={traerPersonajes}>Traer Personajes</button>
-        <button class="btn btn-success" onClick={siguiente}>Siguiente</button>  
+        <button class="btn btn-outline-danger" onClick={atras}>Atrás</button>
+        <button  class="btn btn-outline-primary" onClick={traerPersonajes}>Traer Personajes</button>
+        <button class="btn btn-outline-success" onClick={siguiente}>Siguiente</button>  
         </div>
         <hr />
         {
