@@ -28,7 +28,32 @@ const PeticionApi_yugiho = () => {
     };
 
   return (
-    <div>PeticionApi_yugiho</div>
+    <div>
+        <div className='container'>
+        <h1 className='text-center'>Yu-Gi-Ho Cartas de Duelos</h1>
+        <div class="btn-group text-center container" role="group">
+        <button class="btn btn-danger" onClick={atras}>Atrás</button>
+        <button  class="btn btn-primary" onClick={traerPersonajes}>Traer Personajes</button>
+        <button class="btn btn-success" onClick={siguiente}>Siguiente</button>  
+        </div>
+        <hr />
+        {
+            personajes.map((aux)=> (
+                
+                <div key={aux.id}>
+                <div class="card-body">
+                <h4 className='text-center card-title'><b>{aux.name}</b></h4>
+                <img src={aux.card_images[0].image_url} class="rounded mx-auto d-block" alt="prueba"/>
+                <h4><b>Descripcion: </b></h4><span><p>{aux.desc}</p></span>
+                <hr />
+                </div>
+                
+            </div>
+            ))
+            
+        }
+        </div>
+    </div>
   )
 }
 
